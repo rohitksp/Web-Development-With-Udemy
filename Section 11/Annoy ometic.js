@@ -1,5 +1,5 @@
-//var tell = prompt("Your name is Rohit?");
-//while(tell.indexOf("Yes") === -1) {
+// var tell = prompt("Your name is Rohit?");
+// while(tell.indexOf("Yes") === -1) {
 //    var tell = prompt("Your name is Rohit?");
 //}
 //  alert("OKAY THANKS!!");
