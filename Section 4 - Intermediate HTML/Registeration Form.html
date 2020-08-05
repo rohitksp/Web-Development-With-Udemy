@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <h1>Register Form</h1>
+</head>
+<body>
+    <form action="#">
+        <fieldset><br>
+            <legend>Enter Your Personal Details</legend>
+            <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+            <label for="password">Password:</label>
+                    <input type="id" name="password" id="password" placeholder="Password" required><br>
+            <label for="male">Male</label>
+                    <input name="gender" type="radio" value="male" id="male">
+            <label for="female">Female</label>
+                    <input name="gender" type="radio" value="female" id="female">
+            <label for="other">Other</label>
+                    <input name="gender" type="radio" value="other" id="other">
+        <div><label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="password">Password</label>
+                    <input name="password" type="password" placeholder="Password" pattern=".{5,10}" required title="Please fill 5 to 10 characters."></div>
+        <div><label for="date of birth">Date of Birth</label>
+                    <input type="date" name="date of birth" id="date of birth" required></div>
+        <div>       <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">I agree to the terms and conditions</label></div>
+        <div>
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+        </div><br>
+     </fieldset>
+    </form>
+</body>
+</html>
