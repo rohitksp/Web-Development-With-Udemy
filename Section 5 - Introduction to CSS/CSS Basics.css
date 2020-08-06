@@ -1,0 +1,38 @@
+h1 {
+   color:pink; background-color: blueviolet; border-style: double;
+}
+ul {
+   border-style: solid; background-color:pink ;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: seagreen;
+}
+h2 {
+     color:red;
+}
+
+li {
+    color: blue;
+}
+h1 {
+    color:rgb(255, 50, 50);
+}
+h2 {
+    color: rgba(50, 255, 10, 0.9)
+}
+h1 {
+    background: rgba(200, 255, 50, 0.3);
+}
+body {
+    background: rgb(50, 30, 50);
+}
+body {
+    background: url(https://st2.depositphotos.com/1000487/11085/i/950/depositphotos_110855762-stock-photo-abstract-template-design-with-colorful.jpg)
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#special {
+    color: rgb(100, 20, 50);
+}
+.hello {
+    text-decoration: line-through;
+}

@@ -1,0 +1,36 @@
+/* font-family */
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* font-size */
+body{
+    font-size: 20px;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 5ex ;
+}
+span{
+    font-size: 1.9em;
+}
+/* font-weight */
+ul{
+    font-weight:initial;
+}
+/* line-height */
+li{
+    line-height: 0.9;
+}
+/* text-align */
+li{
+    text-align:center;
+}
+/* text-decoration */
+body{
+    text-decoration:line-through;
+}

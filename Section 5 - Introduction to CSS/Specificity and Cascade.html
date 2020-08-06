@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <style type="text/css">
+    body{
+        color: blueviolet;
+    }
+    ul{
+        color: green;
+    }
+    li{
+        color:brown;
+    }
+    .Wrong{
+        background-color: chartreuse;
+    }
+    #Yellow{
+        color: blueviolet;
+    }
+    .Hello{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello Friends!!!
+    </h1>
+    <ul>
+        <li class="Hello" id="Yellow">Rohan</li>
+        <li id="Yeah">Aman</li>
+        <li>Rihan</li>
+        <li>Manish</li>
+    </ul>
+</body>
+</html>
+
+<!-- normal attributes is not equal the id attributes and name attributes
+Normal attributes = 0
+Name attributes = 10
+Id attributes = 100 -->
+<!-- Type Selectors -->
+li{
+
+}
+li a{
+
+}
+li + a{
+
+}
+<!-- Class, attributes and pseudo-class Selectors -->
+.hello{
+
+}
+<input [type='text']{
+
+}>
+<!-- ID Selectors -->
+#hello{
+    
+}

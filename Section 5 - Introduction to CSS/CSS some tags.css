@@ -1,0 +1,32 @@
+/* Element */
+li{
+
+}
+/* Class */
+#class{
+
+}
+/* Id */
+.hello{
+
+}
+/* Star */
+*{
+  border: 0.5px dotted green;
+}
+/* Descendant Selector */
+li a{
+    color: brown;
+}
+/* Adjacent Selector */
+h2 + ul{
+    color: red;
+}
+/* Attribute Selector */
+a[href="https://www.shopclues.com/?mcid=ps&utm_campaign=Bing_Search_Text_Exact_Brand_Shopclues&utm_source=Bing&utm_medium=cpc&msclkid=43b7ced8e95815ffeef991f274e3ed36"]{
+    background: yellow;
+}
+/* nth of type */
+ul:nth-of-type(2){
+    color: green;
+}
