@@ -3,9 +3,12 @@ img {
     float: left;
     margin: 1.66%;
 }
-h1{
-    padding: 10px;
-    width: 200px;
-    border:red 5px solid;
-    background-color: yellow;
+h1 {
+ text-transform: uppercase;
+ font-family: raleway;
+ border-bottom: 2px solid rgb(150, 70, 110);
+ padding-bottom: 20px;
+ width: 30%;
+ margin: 1.66%;
+ color:rgb(150, 70, 110)
 }
