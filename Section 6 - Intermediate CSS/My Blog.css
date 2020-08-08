@@ -12,8 +12,7 @@ div {
     font-family: Source sans pro;
     padding-top: 5px;
     padding-bottom: 5px;
-    box-shadow: 5px 5px 5px rgb(216, 205, 205);
-    background:rgba(10, 10, 10, 0.4)
+    background:rgba(50, 50, 50, 0.2)
 }
 .Hi {
     border-left: 5px solid #bdc3c7;
