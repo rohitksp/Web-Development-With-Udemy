@@ -1,0 +1,44 @@
+h2 {
+    text-transform: uppercase;
+    color: #3498db;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+}
+div {
+    border: 15px solid #bdc3c7;
+    margin: 10px 20%;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background:rgba(50, 50, 50, 0.2)
+}
+.Hi {
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+}
+#yes {
+    border-bottom: 2px solid#bdc3c7;
+    padding-bottom: 20px;
+}
+body {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)),
+                      url("https://i.pinimg.com/originals/38/d2/34/38d23470c6f19bd1fa1d6ab14081525e.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Source sans pro;
+}
+h1 {
+    border: 2px solid #bdc3c7;
+    padding: 1.50%;
+    margin-right:56%;
+}
+#hello {
+    margin-right: 51.5%;
+}
+#size {
+    margin-right: 55%;
+}
+#create {
+    margin-right: 55%;
+}
