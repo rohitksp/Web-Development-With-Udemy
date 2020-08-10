@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Systems</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .red {
+            border: 1px solid red;
+            background-color: skyblue;
+        }
+        .size {
+            height: 20px;
+        }
+        .green {
+            background: green;
+            border:1px solid yellow;
+        }
+    </style>
+    <h1>Bootstrap Grid System</h1>
+</head>
+<body>
+    <div class="container">
+    <!--     <div class="row">
+            <div class="col-lg-4 col-md-2 red">Col 1</div>
+            <div class="col-lg-3 col-md-2 red">Col 3</div>
+            <div class="col-lg-2 col-md-2 red">Col 2</div>
+            <div class="col-lg-3 col-md-2 red">Col 4</div>
+        </div> -->
+    <div class="row">
+        <div class="col-md-3 col-sm-6 red">
+            <div class="row">
+                <div class="col-lg-6 red">FIRST</div>
+                <div class="col-lg-6 red">SECOND</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 red">COL 2</div>
+        <div class="col-md-3 col-sm-6 red">COL 3</div>
+        <div class="col-md-3 col-sm-6 red">
+            <div class="row">
+                <div class="col-lg-2 size green"></div>
+                <div class="col-lg-2 size green"></div>
+                <div class="col-lg-2 size green"></div>
+                <div class="col-lg-2 size green"></div>
+                <div class="col-lg-2 size green"></div>
+                <div class="col-lg-2 size green"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
