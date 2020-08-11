@@ -1,0 +1,24 @@
+img {
+    width: 100%;
+}
+.equal {
+    padding-left: 25%;
+    color:black;
+    font-family: 'Rowdies';
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+h1 {
+    font-family: 'Rowdies';
+}
+.name {
+   padding-left: 40%;
+   text-transform: uppercase;
+   font-family: 'Rowdies';
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
