@@ -1,6 +1,7 @@
 window.setTimeout(function () {
   var todos = []
   var input = window.prompt('Select any of the option that you are watching on screen.')
+
   while (input !== 'quit') {
     if (input === 'list') {
       listTodo()
@@ -20,11 +21,13 @@ window.setTimeout(function () {
     })
     console.log('**********')
   }
+
   function newTodo () {
     var add = window.prompt('Please add your new todo here.')
     todos.push(add)
     console.log('YOUR TODO HAS SUCCESSFULLY ADDED')
   }
+
   function deleteTodo () {
     var index = window.prompt('Which todo do you want to delete?')
     todos.splice(index, 1)
