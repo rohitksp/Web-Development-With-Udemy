@@ -7,5 +7,5 @@ button.addEventListener('click', function () {
     document.body.style.background = 'Green'
   }
   purple = !purple */
-  document.body.classList.toggle("purple")
+  document.body.classList.toggle('purple')
 })
