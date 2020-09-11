@@ -1,0 +1,73 @@
+/* function declaration - function name*/
+function name()
+
+/* Arguments - we pass the any value to function that we call arguments. */
+function name(fname,lname){
+    console.log("Hello " + fname + " " + lname)
+}
+/* How to call function with the arguments */
+name("Rohan", "Singh")
+
+/* So now result is */
+Hello Rohan Singh
+
+/* Arguments another cases */
+function name(user1, user2, user3) {
+console.log("Hi "+ user1 + "!")
+console.log("Hi "+ user2 + "!")
+console.log("Hi "+ user3 + "!")
+}
+
+/* Now i wil send argumets */
+name("Rohan", "Kamal", "Priya")
+
+/* Now i get the result is this */
+Hi Rohan!
+Hi Kamal!
+Hi Priya!
+
+/* Return value in the function */
+function capitalize(str) {
+    if(typeof str === "number") {
+      return "that's not a string!"
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+  
+  var city = "paris";              //"paris"
+  var capital = capitalize(city);  //"Paris"
+  
+  var num = 37;           
+  var capital = capitalize(num);  //"that's not a string!" 
+
+  /* Difference of the function declaration and the function expression */
+  /* Function Declaration */
+  function name(){
+    return "Hello Everyone!"
+  }
+
+  /* Function Expression */
+  var zoom = function(){
+    return "Hello!"
+  }
+  
+  /* function declaration is that we put the fuction name like (user, name, person number any of this) */
+  /* but function expression is that we put function in the var. */
+  /* like some example here */
+  var user = function(){
+    return "Great Dud!"
+    }
+    undefined
+    user
+    ƒ (){
+    return "Great Dud!"
+    }
+    user()
+    "Great Dud!"
+    user = 34
+    34
+    user()
+    VM876:1 Uncaught TypeError: user is not a function
+    at <anonymous>:1:1
+    /* You got error if you have changed the var value so you can't use the function again. */ 
+  
