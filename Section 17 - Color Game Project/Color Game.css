@@ -19,6 +19,15 @@ h1 {
     max-width: 600px;
 }
 
-span {
-    color: white;
+#stripe {
+    background: white;
+    text-align: center;
+    color: black;
+    height: 30%;
+}
+
+.selected {
+    background: Blue;
+    color: White;
+    font-weight: bold;
 }
