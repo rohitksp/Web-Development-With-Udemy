@@ -4,11 +4,11 @@ var square = document.querySelectorAll('#square')
 var displayCode = document.getElementById('colorCode')
 var pickedColor = pickColor()
 var h1 = document.querySelector('h1')
-displayCode.textContent = pickedColor
 var messsageDisplay = document.querySelector('#message')
 var resetButton = document.getElementById('reset')
 var easyBtn = document.getElementById('easyBtn')
 var hardBtn = document.getElementById('hardBtn')
+displayCode.textContent = pickedColor
 
 loopFuction()
 
@@ -27,6 +27,7 @@ easyBtn.addEventListener('click', function () {
     }
   }
 })
+
 hardBtn.addEventListener('click', function () {
   hardBtn.classList.add('selected')
   easyBtn.classList.remove('selected')
@@ -48,7 +49,7 @@ resetButton.addEventListener('click', function () {
   for (var i = 0; i < square.length; i++) {
     square[i].style.background = color[i]
   }
-  h1.style.background = '#232323'
+  h1.style.background = '#4a171e'
 })
 
 function loopFuction () {
