@@ -1,60 +1,41 @@
 var numSquare = 6
-var color = generateRandomColor(numSquare)
+var color = []
+var pickedColor
 var square = document.querySelectorAll('#square')
 var displayCode = document.getElementById('colorCode')
-var pickedColor = pickColor()
-var h1 = document.querySelector('h1')
 var messsageDisplay = document.querySelector('#message')
+var h1 = document.querySelector('h1')
 var resetButton = document.getElementById('reset')
-var easyBtn = document.getElementById('easyBtn')
-var hardBtn = document.getElementById('hardBtn')
-displayCode.textContent = pickedColor
+var modeButton = document.querySelectorAll('.mode')
 
-loopFuction()
+init()
 
-easyBtn.addEventListener('click', function () {
-  hardBtn.classList.remove('selected')
-  easyBtn.classList.add('selected')
-  numSquare = 3
-  color = generateRandomColor(numSquare)
-  pickedColor = pickColor()
-  displayCode.textContent = pickedColor
-  for (var i = 0; i < square.length; i++) {
-    if (color[i]) {
-      square[i].style.background = color[i]
-    } else {
-      square[i].style.display = 'none'
-    }
+function init () {
+  modeButtonClick()
+  setUpSquares()
+  reset()
+}
+
+function modeButtonClick () {
+  for (var i = 0; i < modeButton.length; i++) {
+    modeButton[i].addEventListener('click', function () {
+      modeButton[0].classList.remove('selected')
+      modeButton[1].classList.remove('selected')
+      this.classList.add('selected')
+      this.textContent === 'Easy' ? numSquare = 3 : numSquare = 6
+
+      /* if(this.textContent === 'Easy') {
+        numSquare = '3'
+      } else {
+        numSquare = '6'
+      } */
+      reset()
+    })
   }
-})
+}
 
-hardBtn.addEventListener('click', function () {
-  hardBtn.classList.add('selected')
-  easyBtn.classList.remove('selected')
-  numSquare = 6
-  color = generateRandomColor(numSquare)
-  pickedColor = pickColor()
-  displayCode.textContent = pickedColor
+function setUpSquares () {
   for (var i = 0; i < square.length; i++) {
-    square[i].style.background = color[i]
-    square[i].style.display = 'block'
-  }
-})
-
-resetButton.addEventListener('click', function () {
-  color = generateRandomColor(numSquare)
-  pickedColor = pickColor()
-  displayCode.textContent = pickedColor
-
-  for (var i = 0; i < square.length; i++) {
-    square[i].style.background = color[i]
-  }
-  h1.style.background = '#4a171e'
-})
-
-function loopFuction () {
-  for (var i = 0; i < square.length; i++) {
-    square[i].style.background = color[i]
     square[i].addEventListener('click', function () {
       var clickColor = this.style.background
       if (clickColor === pickedColor) {
@@ -69,6 +50,27 @@ function loopFuction () {
     })
   }
 }
+
+function reset () {
+  color = generateRandomColor(numSquare)
+  pickedColor = pickColor()
+  displayCode.textContent = pickedColor
+  messsageDisplay.textContent = ''
+  resetButton.textContent = 'New Colors'
+  for (var i = 0; i < square.length; i++) {
+    if (color[i]) {
+      square[i].style.display = 'block'
+      square[i].style.background = color[i]
+    } else {
+      square[i].style.display = 'none'
+    }
+  }
+  h1.style.background = '#4a171e'
+}
+
+resetButton.addEventListener('click', function () {
+  reset()
+})
 
 function changeColor (color) {
   for (var i = 0; i < square.length; i++) {
@@ -95,3 +97,32 @@ function randomColor () {
   var b = Math.floor(Math.random() * 256)
   return 'rgb(' + r + ', ' + g + ', ' + b + ')'
 }
+
+/* easyBtn.addEventListener('click', function () {
+  hardBtn.classList.remove('selected')
+  easyBtn.classList.add('selected')
+  numSquare = 3
+  color = generateRandomColor(numSquare)
+  pickedColor = pickColor()
+  displayCode.textContent = pickedColor
+  for (var i = 0; i < square.length; i++) {
+  if (color[i]) {
+  square[i].style.background = color[i]
+  } else {
+    square[i].style.display = 'none'
+    }
+  }
+})
+
+hardBtn.addEventListener('click', function () {
+  hardBtn.classList.add('selected')
+  easyBtn.classList.remove('selected')
+  numSquare = 6
+  color = generateRandomColor(numSquare)
+  pickedColor = pickColor()
+  displayCode.textContent = pickedColor
+  for (var i = 0; i < square.length; i++) {
+    square[i].style.background = color[i]
+    square[i].style.display = 'block'
+  }
+}) */
