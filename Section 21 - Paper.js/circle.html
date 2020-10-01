@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circles</title>
+    <title>circles</title>
     <script src="paper-full.js"></script>
     <link rel="stylesheet" href="circle.css">
+    
     <script type="text/paperscript" canvas="myCanvas">
+        var circles = [];
+
         function onKeyDown(event) {
             var maxPoint = new Point(view.size.width, view.size.height)
             var randomPoint = Point.random()
             var point = maxPoint * randomPoint
-            new Path.Circle(point, 10).fillColor = 'Red';
+            var newcircles =  new Path.circles(point, 500)
+            newcircles.fillColor = 'orange'
+            circles.push(newcircles)
+        }
+        
+        var animatedcircles = new Path.circles(new Point(300,300), 100)
+        animatedcircles.fillColor = 'red'
+
+        function onFrame(event) {
+            for(var t = 0; t < circles.length; t++) {
+                circles[t].fillcolor.hue += 1;
+                circles[t].scale(.9)
+            }
         }
     </script>
 </head>
 <body>
-    <canvas id="myCanvas" resize></canvas>
+    <canvas id="myCanvas" resize></canvas>  
 </body>
 </html>
