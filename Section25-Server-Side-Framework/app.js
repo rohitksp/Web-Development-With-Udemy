@@ -1,6 +1,4 @@
-const { Console } = require('console')
 var exp = require('express')
-const { title } = require('process')
 var app = exp()
 
 app.get('/', function(req, res) {
@@ -24,9 +22,9 @@ app.get('/r/:PublicFreakout/:comment/:id/:title/', function(req, res){
 })
 
 app.get('*', function(req, res) {
-    res.send('YOUR CHOOSE A WRONG KEY')
+    res.send('YOU CHOOSED A WRONG KEY')
 })
 
 app.listen(5555, function(req, res) {
-    console.log('Server has been started')
+    console.log('Server has started')
 })
